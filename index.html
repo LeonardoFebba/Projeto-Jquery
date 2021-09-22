@@ -1,55 +1,132 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Life</title>
+	<title>Tabs</title>
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <a href="#home" class="home"><li>Home</li></a>
-            <a href="#portifolio" class="port"><li>Portifolio</li></a>
-            <a href="#faq"><li>FAQ</li></a>
-        </ul>
-    </nav>
-    <div class="container">
-       <section class="home anime">
-           <h1>Teste de animação com Jquery</h1>
-       </section>
-    </div>
+	<script type="text/javascript">
+		document.documentElement.className += ' js';
+	</script>
 
-    <div class="dataTeste" data-height='500'>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consectetur consequatur officia nobis ad officiis ab facere magnam voluptates molestiae nemo voluptas possimus dolore, sit optio itaque natus dolorum tenetur!</p>
-    </div>
+	<section class="container animais" data-group='animais'>
 
-    <section class="portifolio anime">
-        <div class="teste"></div>
-        <div class="teste"></div>
-        <div class="teste"></div>
-        <div class="teste"></div>
-        <div class="teste"></div>
-    </section>
+		<h1>Animais Espirituais</h1>
 
-    <section class="faq anime">
-        <ul>
-            <li>Lorem ipsum</li>
-            <li>Lorem ipsum</li>
-            <li>Lorem ipsum</li>
-            <li>Lorem ipsum</li>
-            <li>Lorem ipsum</li>
-            <li>Lorem ipsum</li>
-            <li>Lorem ipsum</li>
-            <li>Lorem ipsum</li>
-            <li>Lorem ipsum</li>
-            <li>Lorem ipsum</li>
-        </ul>
+		<ul class="tab-menu">
+			<li><a href="#fox" data-click="fox">Fox</a></li>
+			<li><a href="#firefox" data-click="firefox">FireFox</a></li>
+			<li><a href="#wolf" data-click="wolf">Wolf</a></li>
+		</ul>
 
-    </section>
-    <script type="module" src="js/jquery.min.js"></script>
-    <script type="module" src="js/app.js"></script>
-    <script type="module" src="js/commands.js"></script>
+		<div class="item" id="fox" data-target="fox">
+			<div class="item-img">
+				<img src="img/fox.jpg" alt="Fox">
+				<h2>Fox</h2>
+			</div>
+			<div class="item-info">
+				<h3>Características</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptas nostrum quisquam vitae et reiciendis.</p>
+				<h3>Habitat</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptas nostrum quisquam vitae et reiciendis.</p>
+			</div>
+		</div>
+
+		<div class="item" id="firefox" data-target="firefox">
+			<div class="item-img">
+				<img src="img/firefox.jpg" alt="FireFox">
+				<h2>FireFox</h2>
+			</div>
+			<div class="item-info">
+				<h3>Características</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptas nostrum quisquam vitae et reiciendis.</p>
+				<h3>Habitat</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptas nostrum quisquam vitae et reiciendis.</p>
+			</div>
+		</div>
+
+		<div class="item" id="wolf" data-target="wolf">
+			<div class="item-img">
+				<img src="img/wolf.jpg" alt="wolf">
+				<h2>Wolf</h2>
+			</div>
+			<div class="item-info">
+				<h3>Características</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptas nostrum quisquam vitae et reiciendis.</p>
+				<h3>Habitat</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptas nostrum quisquam vitae et reiciendis.</p>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="florestas" data-group='florestas'>
+	<div class="container">
+		<h1>Florestas Termais</h1>
+
+		<ul class="tab-menu">
+			<li><a href="#estrada" data-click="estrada">Estrada</a></li>
+			<li><a href="#sol" data-click="sol">Sol</a></li>
+			<li><a href="#verde" data-click="verde">Verde</a></li>
+		</ul>
+
+		<div class="item" id="estrada" data-target="estrada">
+			<div class="item-img">
+				<img src="img/estrada.jpg" alt="Estrada">
+				<h2>Estrada</h2>
+			</div>
+			<div class="item-info">
+			<div>
+				<h3>Características</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptas nostrum quisquam vitae et reiciendis.</p>
+			</div>
+			<div>
+				<h3>Habitat</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptas nostrum quisquam vitae et reiciendis.</p>
+			</div>
+			</div>
+		</div>
+
+		<div class="item" id="sol" data-target="sol">
+			<div class="item-img">
+				<img src="img/sol.jpg" alt="Sol">
+				<h2>Sol</h2>
+			</div>
+			<div class="item-info">
+			<div>
+				<h3>Características</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptas nostrum quisquam vitae et reiciendis.</p>
+			</div>
+			<div>
+				<h3>Habitat</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptas nostrum quisquam vitae et reiciendis.</p>
+			</div>	
+			</div>
+		</div>
+
+		<div class="item" id="verde" data-target="verde">
+			<div class="item-img">
+				<img src="img/verde.jpg" alt="Verde">
+				<h2>Verde</h2>
+			</div>
+			<div class="item-info">
+			<div>
+				<h3>Características</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptas nostrum quisquam vitae et reiciendis.</p>
+			</div>
+			<div>
+				<h3>Habitat</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptas nostrum quisquam vitae et reiciendis.</p>
+			</div>
+			</div>
+		</div>
+	</div>
+	</section>
+
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+
 </body>
 </html>
